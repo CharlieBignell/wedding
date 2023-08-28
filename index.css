@@ -1,0 +1,86 @@
+body{
+    background-image: url('./bg_img.avif');
+    background-size: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0;
+    font-family: 'Concert One', cursive;
+}
+
+h1{
+    font-size: calc(18px + 6vw);
+    margin: 0;
+}
+
+.purple{
+    color: rgb(191, 195, 240);
+}
+
+.orange{
+    color: rgb(254, 184, 122);
+}
+
+.green{
+    color: rgb(169, 216, 128);
+}
+
+.pink{
+    color: rgb(251, 186, 219);
+}
+
+.yellow{
+    color: rgb(255, 239, 103);
+}
+
+.blue{
+    color: rgb(111, 208, 232);
+}
+
+.title_small{
+    color: rgb(171, 171, 171);
+    font-size: calc(12px + 0.5vw);
+    vertical-align: middle;
+}
+
+#subtitle{
+    font-size: calc(18px + 3vw);
+    margin: 0;
+    color: rgb(254, 184, 122);
+}
+
+p, h1, h2, h3, h4{
+    margin: 0;
+    color: rgb(28, 28, 28);
+}
+
+#main{
+    background-color: white;
+    width: 60%;
+    height: 1000px;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+#titles{
+    text-align: center;
+}
+
+#details{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.details_row{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.details_header{
+    width: 10%;
+}
+
+#bottom_container > img{
+    max-width: 50%;
+}
