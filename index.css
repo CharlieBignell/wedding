@@ -8,10 +8,39 @@ body{
 }
 
 
-h1, h2, h3, h4, h5, .title_small, .details_header{
+h1, h2, h3, h4, h5{
     font-family: 'Concert One', sans-serif;
-    vertical-align: middle;
 }
+
+h1{
+    height: calc(14px + 7.5vw);
+}
+
+#subtitle{
+    font-size: calc(15px + 3vw);
+    margin: 0;
+    color: rgb(254, 184, 122);
+    height: calc(15px + 4vw);
+
+}
+
+.details_header{
+    width: 4em;
+    font-size: calc(10px + 0.95vw);
+    text-align: right;
+    font-family: 'Concert One', sans-serif;
+    height: calc(10px + 1.5vw);
+}
+
+.title_small{
+    color: rgb(185, 185, 185);
+    font-size: calc(10px + 1.2vw);
+    vertical-align: middle;
+    font-family: 'Concert One', sans-serif;
+    height: calc(10px + 1.5vw);
+
+}
+
 
 p{
     font-family: 'Roboto Slab', serif;
@@ -48,11 +77,7 @@ h1{
 
 
 
-.title_small{
-    color: rgb(185, 185, 185);
-    font-size: calc(10px + 1.2vw);
-    vertical-align: middle;
-}
+
 
 .sep{
     width: 95%;
@@ -60,11 +85,6 @@ h1{
     margin: 2.5em 0;
 }
 
-#subtitle{
-    font-size: calc(15px + 3vw);
-    margin: 0;
-    color: rgb(254, 184, 122);
-}
 
 p, h1, h2, h3, h4{
     margin: 0;
@@ -138,13 +158,10 @@ h3{
 .details_item{
     font-size: calc(10px + 0.5vw);
     text-align: left;
+    transform: translateY(-2px);
 }
 
-.details_header{
-    width: 4em;
-    font-size: calc(10px + 0.95vw);
-    text-align: right;
-}
+
 
 .details_row:nth-child(1) > .details_header{
     color: rgb(191, 195, 240);
@@ -316,6 +333,8 @@ h3{
         width: 30px;
         border-radius: 12px;
     }
-
+    .details_item{
+        transform: translateY(0);
+    }
 
 }
