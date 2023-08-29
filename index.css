@@ -1,6 +1,6 @@
 body{
     background-image: url('./bg_img.avif');
-    background-size: 20%;
+    background-size: 30%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -17,7 +17,7 @@ p{
 }
 
 h1{
-    font-size: calc(18px + 6vw);
+    font-size: calc(14px + 6vw);
     margin: 0;
 }
 
@@ -49,19 +49,19 @@ h1{
 
 .title_small{
     color: rgb(185, 185, 185);
-    font-size: calc(12px + 1.2vw);
+    font-size: calc(10px + 1.2vw);
     vertical-align: middle;
     font-family: 'Concert One', cursive;
 }
 
 .sep{
-    width: 100%;
+    width: 95%;
     border-bottom: 1px solid rgb(248, 208, 214);
     margin: 2.5em 0;
 }
 
 #subtitle{
-    font-size: calc(18px + 3vw);
+    font-size: calc(15px + 3vw);
     margin: 0;
     color: rgb(254, 184, 122);
 }
@@ -72,11 +72,11 @@ p, h1, h2, h3, h4{
 }
 
 p{
-    font-size: calc(12px + 0.3vw);
+    font-size: calc(10px + 0.45vw);
 }
 
 h3{
-    font-size: calc(15px + 1.1vw);
+    font-size: calc(12px + 1.1vw);
     color: rgb(254, 184, 122);
     margin-bottom: 0.7em;
 }
@@ -91,7 +91,7 @@ h3{
 
 #titles > p{
     font-family: 'Marck Script', cursive;
-    font-size: calc(12px + 0.7vw);
+    font-size: calc(10px + 1vw);
     margin: 0.2em 0;
 }
 
@@ -100,11 +100,13 @@ h3{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    width: 100%;
 }
 
 #main{
     background-color: white;
     width: 60%;
+    display: flex;
     flex-flow: column nowrap;
     align-items: center;
     padding: 1em 2em;
@@ -118,7 +120,7 @@ h3{
 #details{
     display: flex;
     flex-flow: column nowrap;
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
     gap: 0.5em;
 }
 
@@ -132,16 +134,15 @@ h3{
 }
 
 .details_item{
-    font-size: calc(12px + 0.4vw);
-    /* border: 1px solid green; */
+    font-size: calc(10px + 0.5vw);
+    text-align: left;
 }
 
 .details_header{
     width: 4em;
     font-family: 'Concert One', cursive;
-    font-size: calc(12px + 0.8vw);
+    font-size: calc(10px + 0.95vw);
     text-align: right;
-    /* border: 1px solid red; */
 }
 
 .details_row:nth-child(1) > .details_header{
@@ -199,16 +200,121 @@ h3{
 }
 
 #bottom_container > img{
-    max-width: 35%;
+    width: 35%;
+    min-width: 300px;
+    height: fit-content;
 }
 
 #footer{
     text-align: center;
-    margin: 4em 0 1em 0;
+    margin: 4em 0 2.5em 0;
     width: 100%;
 }
 
 #footer > p{
     color: rgb(178, 178, 178);
     font-size: calc(12px + 0.2vw);
+}
+
+@media only screen and (max-width: 1000px) {
+    body{
+        background-size: 20%;
+    }
+
+    #main{
+        width: calc(100% - 82px);
+        flex-grow: 1;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    #footer{
+        text-align: center;
+        margin: 2.5em 0 1em 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body{
+        background-size: 40%;
+    }
+
+    h1{
+        font-size: calc(14px + 5vw);
+    }
+
+    .sep{
+        width: 100%;
+        margin: 1.5em 0;
+    }
+
+    #subtitle_cont{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 0.7em;
+        justify-content: center;
+    }
+
+    .details_row{
+        gap: 0.5em;
+    }
+
+    .details_header{
+        width: 3em;
+    }
+
+    .details_item{
+        font-size: calc(10px + 0.2vw);
+        text-align: left;
+    }
+
+    #last_item{
+        margin-top: 1em;
+    }
+
+
+
+
+
+
+    #bottom_container{
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 2em;
+    }
+
+    #transport_text{
+        width: auto;
+        order: -1;
+        text-align: center;
+    }
+
+    #legend{
+        margin-top: 1.5em;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .legend_item > p{
+        width: 180px;
+        text-align: left;
+    }
+
+    #bottom_container > img{
+        width: calc(100% - 1em);
+        max-width: 300px;
+        min-width: auto;
+    }
+
+    .marker{
+        height: 7px;
+        width: 30px;
+        border-radius: 12px;
+    }
+
+
 }
