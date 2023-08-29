@@ -1,11 +1,19 @@
 body{
     background-image: url('./bg_img.avif');
-    background-size: 30%;
+    background-size: 20%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     margin: 0;
+}
+
+
+h1, h2, h3, h4, h5{
     font-family: 'Concert One', cursive;
+}
+
+p{
+    font-family: 'Roboto Slab', serif;
 }
 
 h1{
@@ -37,10 +45,19 @@ h1{
     color: rgb(111, 208, 232);
 }
 
+
+
 .title_small{
-    color: rgb(171, 171, 171);
-    font-size: calc(12px + 0.5vw);
+    color: rgb(185, 185, 185);
+    font-size: calc(12px + 1.2vw);
     vertical-align: middle;
+    font-family: 'Concert One', cursive;
+}
+
+.sep{
+    width: 100%;
+    border-bottom: 1px solid rgb(248, 208, 214);
+    margin: 2.5em 0;
 }
 
 #subtitle{
@@ -51,16 +68,47 @@ h1{
 
 p, h1, h2, h3, h4{
     margin: 0;
-    color: rgb(28, 28, 28);
+    color: rgb(53, 53, 53);
+}
+
+p{
+    font-size: calc(12px + 0.3vw);
+}
+
+h3{
+    font-size: calc(15px + 1.1vw);
+    color: rgb(254, 184, 122);
+    margin-bottom: 0.7em;
+}
+
+#subtitle_cont{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1.2em;
+    justify-content: center;
+}
+
+#titles > p{
+    font-family: 'Marck Script', cursive;
+    font-size: calc(12px + 0.7vw);
+    margin: 0.2em 0;
+}
+
+#top_container{
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 #main{
     background-color: white;
     width: 60%;
-    height: 1000px;
     flex-flow: column nowrap;
     align-items: center;
     padding: 1em 2em;
+    border: 1px solid rgb(255, 226, 226);
 }
 
 #titles{
@@ -70,17 +118,97 @@ p, h1, h2, h3, h4{
 #details{
     display: flex;
     flex-flow: column nowrap;
+    margin-bottom: 1.5em;
+    gap: 0.5em;
 }
 
 .details_row{
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
+    /* bordeR: 1px solid blue; */
+    /* width: 100%; */
+    gap: 1em;
+}
+
+.details_item{
+    font-size: calc(12px + 0.4vw);
+    /* border: 1px solid green; */
 }
 
 .details_header{
-    width: 10%;
+    width: 4em;
+    font-family: 'Concert One', cursive;
+    font-size: calc(12px + 0.8vw);
+    text-align: right;
+    /* border: 1px solid red; */
+}
+
+.details_row:nth-child(1) > .details_header{
+    color: rgb(191, 195, 240);
+}
+
+.details_row:nth-child(2) > .details_header{
+    color: rgb(111, 208, 232);
+}
+
+.details_row:nth-child(3) > .details_header{
+    color: rgb(251, 186, 219);
+}
+
+.legend_item{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1em;
+}
+
+#legend{
+    margin-top: 1.5em;
+}
+
+
+#legend :nth-child(1) > .marker{
+    background-color: rgb(191, 195, 240);
+}
+
+#legend :nth-child(2) > .marker{
+    background-color: rgb(111, 208, 232);
+}
+
+#legend :nth-child(3) > .marker{
+    background-color: rgb(251, 186, 219);
+}
+
+.marker{
+    height: 10px;
+    width: 30px;
+    border-radius: 12px;
+}
+
+#bottom_container{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4em;
+}
+
+#transport_text{
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 #bottom_container > img{
-    max-width: 50%;
+    max-width: 35%;
+}
+
+#footer{
+    text-align: center;
+    margin: 4em 0 1em 0;
+    width: 100%;
+}
+
+#footer > p{
+    color: rgb(178, 178, 178);
+    font-size: calc(12px + 0.2vw);
 }
