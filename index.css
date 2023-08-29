@@ -10,8 +10,7 @@ body{
 
 h1, h2, h3, h4, h5, .title_small, .details_header{
     font-family: 'Concert One', sans-serif;
-    height: 100%;
-    line-height: 100%;
+    text-align: center;
 }
 
 p{
