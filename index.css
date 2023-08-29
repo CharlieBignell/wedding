@@ -221,6 +221,7 @@ h3{
     width: 35%;
     min-width: 300px;
     height: fit-content;
+    aspect-ratio: 1/1;
 }
 
 #footer{
@@ -292,11 +293,6 @@ h3{
     #last_item{
         margin-top: 1em;
     }
-
-
-
-
-
 
     #bottom_container{
         flex-flow: column nowrap;
