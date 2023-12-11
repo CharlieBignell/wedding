@@ -4,15 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="confetti.css">
+
+
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -21,93 +17,75 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta name="robots" content="noindex,nofollow">
+    <script src="https://threejs.org/build/three.js"></script>
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js"
+        crossorigin="anonymous"></script>
+    <script type="importmap">
+      {
+        "imports": {      
+          "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
+        }
+      }
+    </script>
 
-    <title>C&F Engagement Party</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Koulen&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <title>Charlie and Fliss</title>
 </head>
 
 <body>
-    <div id="main">
+
+    <main>
         <div id="titles">
-            <h1>
-                <span class="purple">C</span><span class="blue">H</span><span class="green">A</span><span
-                    class="pink">R</span><span class="yellow">L</span><span class="blue">I</span><span
-                    class="purple">E</span>
-                <span class="green">&amp;</span>
-                <span class="pink">F</span><span class="blue">L</span><span class="purple">I</span><span
-                    class="yellow">S</span><span class="green">S</span>
-            </h1>
-            <p>Invite you to their</p>
-            <div id="subtitle_cont">
-                <p class="title_small">small</p>
-                <h2 id="subtitle">ENGAGEMENT</h2>
-                <p class="title_small">shindig</p>
+            <h1>WE'RE GETTING MARRIED</h1>
+            <div>
+                <h2>CHARLIE AND FLISS.</h2>
+                <h2>2,557 DAYS IN THE MAKING.</h2>
+                <h2>PARTY ACCORDINGLY.</h2>
             </div>
         </div>
 
-
-        <div class="sep"></div>
-
-        <div id="top_container">
+        <div id="content">
+            <div id="photos">
+                <img src="./cb.jpg" />
+                <img src="./fc.jpg" />
+            </div>
+    
             <div id="details">
-                <div class="details_row">
-                    <p class="details_header">WHEN</p>
-                    <p class="details_item">Sat 11th Nov, 4pm til late</p>
-                </div>
 
-                <div class="details_row">
-                    <p class="details_header">WHERE</p>
-                    <p class="details_item">18 Luna Place, Hatfield Rd, AL1 4FH</p>
-                </div>
-
-                <div class="details_row">
-                    <p class="details_header">VIBES</p>
-                    <p class="details_item">Games, drinks & fun times guaranteed</p>
-                </div>
-            </div>
-            <div class="sep"></div>
-
-            <p>We'll be getting pizzas in at around 6pm 🍕</p>
-            <p id="last_item">The bar will be fully stocked, but feel free to bring drinks with you! 🥂</p>
-            <br>
-            <p>Please let us know if you can make it 💃</p>
-        </div>
-
-        <div class="sep"></div>
-
-        <div id="bottom_container">
-            <img src="./map.jpg">
-
-            <div id="transport_text">
-                <h3>TRANSPORT</h3>
-                <p>St. Albans City train station is a 15 minute walk away. <br><br>We don't have parking available at our flat, but
-                    there are
-                    some on-street areas around us. They're non-permit on a weekend, but will likely be busy. </p>
-                <br>
-                <p>There's also plenty of parking at the train station. You'll need an app called APCOA to pay.</p>
-                <br>
-                <div id="legend">
-                    <div class="legend_item">
-                        <div class="marker"></div>
-                        <p>On-street parking</p>
+                <div id="details_info">
+                    <div class="info">
+                        <h3>When</h3>
+                        <div class="sep"></div>
+                        <p>1:30pm</p>
+                        <p>Sat 8th March 2025</p>
+                        <p id="countdown">...</br>...</p>
                     </div>
-                    <div class="legend_item">
-                        <div class="marker"></div>
-                        <p>Train station</p>
-                    </div>
-                    <div class="legend_item">
-                        <div class="marker"></div>
-                        <p>Our Mojo Dojo Casa House</p>
+                    
+                    <div class="info">
+                        <h3>Where</h3>
+                        <div class="sep"></div>
+                        <p><a target='_blank' href="https://www.tewinbury.co.uk/weddings/tythe-barn/">Tythe Barn @ Tewinbury</a></p>
+                        <p>Welwyn, Hertfordshire</p>
                     </div>
                 </div>
-
+                
+    
+                <h3 id="rsvp">RSVP AUTUMN 2024</h3>
+    
             </div>
         </div>
 
+       
+    </main>
 
-        <div id="footer">
-            <p>Charlie Bignell &copy; 2023 </p>
-        </div> 
-    </div>
+    <script src="confetti.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
