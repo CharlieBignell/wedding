@@ -29,7 +29,7 @@ var x = setInterval(function () {
     }
 
 }, 1000);
-https://www.charlieandfliss.co.uk/faq
+
 if (document.getElementById("btn_mob")) {
     document.getElementById("btn_mob").onclick = function () {
         // location.href = "file:///Users/charliebignell/Desktop/code/wedding/faq.html";
