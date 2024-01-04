@@ -17,12 +17,34 @@ var x = setInterval(function () {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="demo"
-    document.getElementById("countdown").innerHTML = days + " days, " + hours + " hours,</br> "
-        + minutes + " minutes, " + seconds + " seconds";
+    if (document.getElementById("countdown")) {
+        document.getElementById("countdown").innerHTML = days + " days, " + hours + " hours,</br> "
+            + minutes + " minutes, " + seconds + " seconds";
 
-    // If the count down is finished, write some text
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "TODAY'S THE DAY!";
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "TODAY'S THE DAY!";
+        }
     }
+
 }, 1000);
+
+if (document.getElementById("btn_mob")) {
+    document.getElementById("btn_mob").onclick = function () {
+        location.href = "file:///Users/charliebignell/Desktop/code/wedding/faq.html";
+    };
+    document.getElementById("btn_wide").onclick = function () {
+        location.href = "file:///Users/charliebignell/Desktop/code/wedding/faq.html";
+    };
+
+}
+if (document.getElementById("btn_mob_faq")) {
+    document.getElementById("btn_mob_faq").onclick = function () {
+        location.href = "file:///Users/charliebignell/Desktop/code/wedding/index.html";
+    };
+
+    document.getElementById("btn_wide_faq").onclick = function () {
+        location.href = "file:///Users/charliebignell/Desktop/code/wedding/index.html";
+    };
+}
