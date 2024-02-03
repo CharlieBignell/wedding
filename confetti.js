@@ -17,6 +17,7 @@ const color = new THREE.Color();
 
 init();
 
+// TEST
 function init() {
     camera = new THREE.PerspectiveCamera(
         35,
