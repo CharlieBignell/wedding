@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 const worldRadius = 8;
 const confettiSize = 0.15;
 const confettiNum = 2000;
