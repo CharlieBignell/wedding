@@ -17,17 +17,19 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta name="robots" content="noindex,nofollow">
-    <script src="https://threejs.org/build/three.js"></script>
+    <!-- <script src="https://threejs.org/build/three.js"></script>
     <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js"
-        crossorigin="anonymous"></script>
-    <script type="importmap">
-      {
-        "imports": {      
-          "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
-        }
-      }
-    </script>
+        crossorigin="anonymous"></script> -->
+   
+        <script type="importmap">
+          {
+            "imports": {      
+              "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+              "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
+            }
+          }
+        </script>
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -111,7 +113,7 @@
 
     </main>
 
-    <script src="confetti.js"></script>
+    <script type="module" src="confetti.js"></script>
     <script src="script.js"></script>
 
 </body>
