@@ -224,7 +224,7 @@ a {
 
 #book_content>p, #book_content>a,  #book_content>ul>li{
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .faq_item{
@@ -262,7 +262,7 @@ a {
 }
 
 #contact{
-    font-size: calc(15px + 0.5em) !important;
+    /* font-size: calc(15px + 0.5em) !important; */
     text-align: center;
     align-self: center;
 }
@@ -282,12 +282,15 @@ a {
 }
 
 @media only screen and (max-width: 900px) {
+
+    
     button span {
         padding-right: 15px;
     }
 
     #btn_cont{
         gap: 8px;
+        margin-bottom: 50px;
     }
     
     button span:after {
