@@ -30,27 +30,41 @@ var x = setInterval(function () {
 
 }, 1000);
 
-if (document.getElementById("btn_mob")) {
-    document.getElementById("btn_mob").onclick = function () {
+if (document.getElementById("btn_mob_faq")) {
+    document.getElementById("btn_mob_faq").onclick = function () {
         // location.href = "file:///Users/charliebignell/Desktop/code/wedding/faq.html";
         location.href = "https://www.charlieandfliss.co.uk/faq";
 
     };
-    document.getElementById("btn_wide").onclick = function () {
+    document.getElementById("btn_wide_faq").onclick = function () {
         // location.href = "file:///Users/charliebignell/Desktop/code/wedding/faq.html";
         location.href = "https://www.charlieandfliss.co.uk/faq";
 
     };
 
 }
-if (document.getElementById("btn_mob_faq")) {
-    document.getElementById("btn_mob_faq").onclick = function () {
+
+if (document.getElementById("btn_mob_book")) {
+    document.getElementById("btn_mob_book").onclick = function () {
+        // location.href = "file:///Users/charliebignell/Desktop/code/wedding/book.html";
+        location.href = "https://www.charlieandfliss.co.uk/book";
+    };
+
+    document.getElementById("btn_wide_book").onclick = function () {
+        // location.href = "file:///Users/charliebignell/Desktop/code/wedding/book.html";
+        location.href = "https://www.charlieandfliss.co.uk/book";
+    };
+
+}
+
+if (document.getElementById("btn_mob_home")) {
+    document.getElementById("btn_mob_home").onclick = function () {
         // location.href = "file:///Users/charliebignell/Desktop/code/wedding/index.html";
         location.href = "https://www.charlieandfliss.co.uk/";
 
     };
 
-    document.getElementById("btn_wide_faq").onclick = function () {
+    document.getElementById("btn_wide_home").onclick = function () {
         // location.href = "file:///Users/charliebignell/Desktop/code/wedding/index.html";
         location.href = "https://www.charlieandfliss.co.uk/";
     };
