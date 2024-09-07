@@ -55,3 +55,11 @@ if (document.getElementById("btn_mob_faq")) {
         location.href = "https://www.charlieandfliss.co.uk/";
     };
 }
+
+document.getElementsByClassName('menu')[0].addEventListener('click', function () {
+    this.getElementsByClassName('hamburger')[0].classList.toggle("active")
+    document.getElementsByClassName('menu_items')[0].classList.toggle("active")
+    document.getElementById('details').classList.toggle('active')
+    this.classList.toggle("short")
+
+});

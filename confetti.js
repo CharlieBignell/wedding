@@ -5,9 +5,9 @@ const confettiSize = 0.15;
 const confettiNum = 2000;
 const rotateRange_x = Math.PI / 30;
 const rotateRange_y = Math.PI / 50;
-const speed_y = 0.005;
+const speed_y = 0.004;
 const speed_x = 0.002;
-const speed_z = 0.006;
+const speed_z = 0.005;
 
 let camera, scene, renderer, controls;
 let confettiMesh;

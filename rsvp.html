@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="confetti.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="noindex,nofollow">
+    <!-- <script src="https://threejs.org/build/three.js"></script>
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js"
+        crossorigin="anonymous"></script> -->
+
+    <script type="importmap">
+          {
+            "imports": {      
+              "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+              "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
+            }
+          }
+        </script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Koulen&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <title>C&F - RSVP</title>
+</head>
+
+<body>
+
+    <main>
+        <div id="header">
+            <div id="titles">
+                <h1>WE'RE GETTING MARRIED</h1>
+
+                <div id="sub_cont">
+                    <div id="sub">
+                        <h2>CHARLIE AND FLISS.</h2>
+                        <h2>2,557 DAYS IN THE MAKING.</h2>
+                        <h2>PARTY ACCORDINGLY.</h2>
+                    </div>
+                    <button id="btn_mob_home" class="btn_mob">
+                        <span>Home</span>
+                    </button>
+                </div>
+            </div>
+
+            <button id="btn_wide_home" class="btn_wide">
+                <span>Home</span>
+            </button>
+
+        </div>
+
+        <div id="book_content">
+            <p>Please fill-in this RSVP form as soon as possible, with a separate submission for each individual guest.
+            </p>
+
+            <p id="contact">If you have any questions, message Charlie (07599356740) or Fliss (07510391813)</p>
+            </br>
+
+        </div>
+
+
+    </main>
+
+    <script type="module" src="confetti.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
