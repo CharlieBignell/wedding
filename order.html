@@ -17,28 +17,18 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <meta name="robots" content="noindex,nofollow">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ9JV38SV6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-XZ9JV38SV6');
-    </script>
     <!-- <script src="https://threejs.org/build/three.js"></script>
     <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js"
         crossorigin="anonymous"></script> -->
 
     <script type="importmap">
-      {
-        "imports": {      
-          "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
-        }
-      }
-    </script>
+          {
+            "imports": {      
+              "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+              "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
+            }
+          }
+        </script>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +37,7 @@
         href="https://fonts.googleapis.com/css2?family=Koulen&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
 
-    <title>C&F - Save the Date</title>
+    <title>C&F - Order of the Day</title>
 </head>
 
 <body>
@@ -97,44 +87,68 @@
 
         </div>
 
-        <div id="content">
-            <div id="photos">
-                <img src="./cb.jpg" />
-                <img src="./fc.jpg" />
+        <div id="order" class="content">
+            <h2>Order of the Day</h2>
+
+            <div class="order_row">
+                <div class="order_item left">
+                    <p class="time">12:30pm</p>
+                    <p class="item">Guests Arrive 💒</p>
+                </div>
+                <div class="order_line"></div>
+                <div class="order_item right">
+                    <p class="time">1:30pm</p>
+                    <p class="item">💍 Ceremony Starts</p>
+                </div>
             </div>
 
-            <div id="details" class="active">
-
-
-                <div id="details_info">
-
-                    <div class="info">
-                        <h3>When</h3>
-                        <div class="sep"></div>
-                        <p>1:30pm</p>
-                        <p>Sat 8th March 2025</p>
-                        <p id="countdown">...</br>...</p>
-                    </div>
-
-                    <div class="info">
-                        <h3>Where</h3>
-                        <div class="sep"></div>
-                        <p><a target='_blank' href="https://www.tewinbury.co.uk/weddings/tythe-barn/">Tythe Barn @
-                                Tewinbury</a></p>
-                        <p>Welwyn, Hertfordshire</p>
-                    </div>
-
-
-
+            <div class="order_row">
+                <div class="order_item left">
+                    <p class="time">2pm</p>
+                    <p class="item">Cockatils & Canapés 🍸</p>
                 </div>
+                <div class="order_line"></div>
+                <div class="order_item right">
+                    <p class="time">4pm</p>
+                    <p class="item">🍽️ Wedding Breakfast</p>
+                </div>
+            </div>
 
+            <div class="order_row">
+                <div class="order_item left">
+                    <p class="time">5pm</p>
+                    <p class="item">Speeches 🎤</p>
+                </div>
+                <div class="order_line"></div>
+                <div class="order_item right">
+                    <p class="time">6pm</p>
+                    <p class="item">🍰 Desserts and tea & coffee</p>
+                </div>
+            </div>
 
-                <h3 id="rsvp"><a href="https://www.charlieandfliss.co.uk/rsvp">RSVP Here</a></h3>
+            <div class="order_row">
+                <div class="order_item left">
+                    <p class="time">7:30pm</p>
+                    <p class="item">First Dance 💃</p>
+                </div>
+                <div class="order_line"></div>
+                <div class="order_item right">
+                    <p class="time">9pm</p>
+                    <p class="item">🍕 Pizza Served</p>
+                </div>
+            </div>
 
+            <div class="order_row">
+                <div class="order_item left">
+                    <p class="time">Midnight</p>
+                    <p class="item">Time for Bed 😴</p>
+                </div>
+                <div class="order_line"></div>
+                <div class="order_item right">
+                    <p></p>
+                </div>
             </div>
         </div>
-
-
     </main>
 
     <script type="module" src="confetti.js"></script>

@@ -246,30 +246,62 @@ a {
 
 }
 
-#faq_content,
-#book_content {
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: rgba(255, 255, 255, 0.9);
-    align-items: center;
-    /* width: 60%; */
-    align-self: center;
-    border-radius: 10px;
-    padding: 1em 2em;
+#rsvp_intro {
+    text-align: center;
+    width: 100%;
 }
 
-#book_content {
+#rsvp_content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+iframe {
+    width: 100%;
+    flex-grow: 1;
+    height: 1143px;
+    margin: 1rem 0;
+}
+
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(17px);
+    align-items: center;
+    border-radius: 10px;
+    padding: 1em 2em;
+    align-items: flex-start;
+    border: 1px solid rgb(236, 236, 236);
+}
+
+#book_content_inner {
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     align-items: flex-start;
 }
 
-#book_content>p,
-#book_content>a,
-#book_content>ul>li {
+#book_content>img {
+    max-width: 35vw;
+    border-radius: 0.5rem;
+}
+
+#book_content {
+    flex-flow: row nowrap;
+    gap: 1.5rem;
+}
+
+.content p,
+.content a,
+.content ul li {
     text-align: left;
     font-size: 20px;
 }
 
-#book_content>h3 {
+.content h3 {
     font-size: 28px;
 }
 
@@ -331,7 +363,7 @@ a {
     gap: 8px;
 }
 
-.menu_items>.menu_sep{
+.menu_items>.menu_sep {
     border-top: 1px solid rgb(175, 175, 175);
     width: 60px;
 }
@@ -340,6 +372,7 @@ a {
     /* right: -1em; */
     right: 0;
     border-left: 1px solid rgb(232, 232, 232);
+    color: red;
 }
 
 .menu_items>a {
@@ -354,7 +387,7 @@ a {
     text-align: center;
 }
 
-.menu_items>a:hover{
+.menu_items>a:hover {
     transform: scale(1.2);
     /* text-decoration: underline; */
     cursor: pointer;
@@ -379,17 +412,17 @@ a {
     z-index: 3;
 }
 
-.menu>p{
+.menu>p {
     transition: all 0.3s;
     width: 100px;
 }
 
-.menu.short>p{
+.menu.short>p {
     color: transparent;
     width: 0px;
 }
 
-.menu.short{
+.menu.short {
     padding: 0.3em 0.9em;
     gap: 0;
     /* height: 30px; */
@@ -435,53 +468,55 @@ a {
     translate: 0px -8px;
 }
 
-#order{
+#order {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    /* background-color: rgba(255, 255, 255, 0.5); */
-    backdrop-filter: blur(7px);
     width: fit-content;
     align-self: center;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* padding: 1rem 1rem; */
+    /* border-radius: 10px; */
+    /* background-color: white; */
 }
 
 
-.order_row{
+.order_row {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
     gap: 1rem;
 }
 
-#order>h2{
+#order>h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.order_item{
+.order_item {
     display: flex;
     flex-flow: column nowrap;
-    /* border: 1px solid red; */
     flex-grow: 1;
-    width: 300px;
-    font-size: 1.5rem;
+    width: 310px;
+    max-width: 40vw;
+    font-size: 1.6rem;
 }
 
-.order_item.left{
+.order_item.left {
     padding-bottom: 4rem;
     align-items: flex-end;
+    text-align: right;
+}
+
+.item {
+    font-size: 1.45rem;
+    font-style: italic;
 }
 
 .order_item.right {
     padding-top: 4rem;
 }
 
-
-
-.order_line{
+.order_line {
     border-left: 2px solid black;
     height: 100%;
 }
@@ -500,10 +535,19 @@ a {
         max-height: none;
         max-width: 30vw;
     }
+
+    #book_content {
+        flex-flow: column nowrap;
+    }
+
+    #book_content>img {
+        align-self: center;
+        width: 100%;
+        max-width: none;
+    }
 }
 
 @media only screen and (max-width: 900px) {
-
 
     .menu_items {
         position: fixed;
@@ -520,17 +564,25 @@ a {
         transition: all 0.5s;
         gap: 8px;
     }
-    
+
+    #order>h2 {
+        font-size: 2rem;
+    }
+
+    .item {
+        font-size: 1.2rem;
+    }
+
     .menu_items.active {
         top: 0;
     }
 
 
-    .menu>p{
+    .menu>p {
         display: none !important;
     }
 
-    .menu{
+    .menu {
         border: none;
     }
 
@@ -631,10 +683,10 @@ a {
     }
 
     #rsvp {
-       align-self: flex-start;
-       width: auto;
-       margin-top: 0.5em;
-       z-index: inherit;
+        align-self: flex-start;
+        width: auto;
+        margin-top: 0.5em;
+        z-index: inherit;
     }
 
     .info>h3 {
@@ -645,9 +697,8 @@ a {
         font-size: calc(15px + 1.5vw) !important;
     }
 
-    #faq_content,
-    #book_content {
-        padding: 1em;
+    .content {
+        padding: 0.75em;
     }
 
     #more_info {
