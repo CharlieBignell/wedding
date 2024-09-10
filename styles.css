@@ -20,6 +20,10 @@ body {
     /* z-index: 2 */
 }
 
+li, button, a{
+    user-select: none;
+}
+
 p {
     color: rgb(40, 41, 42)
 }
