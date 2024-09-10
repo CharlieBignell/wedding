@@ -565,7 +565,7 @@ iframe {
     .menu_items {
         position: fixed;
         right: 0;
-        top: calc(-100vh - 50px);
+        top: calc(-100vh - 70px);
         height: 100vh;
         z-index: 2;
         width: 100vw;
