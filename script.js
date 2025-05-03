@@ -24,7 +24,7 @@ var x = setInterval(function () {
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("countdown").innerHTML = "TODAY'S THE DAY!";
+            document.getElementById("countdown").innerHTML = "It's been and gone, why are you still here?";
         }
     }
 
